@@ -16,14 +16,22 @@
 </head>
 
 <body class="font-[Lato] w-full">
-    <div class="navbar m-auto bg-base-100 justify-between items-center pt-7 pb-7">
+    <nav
+        class="navbar m-auto bg-base-100 justify-between items-center pt-7 pb-7 lg:w-5/6 lg:bg-[#F85559] lg:mt-12 lg:pl-12 lg:pr-12 rounded-full">
+        <div class="flex-1 text-white text-lg hidden lg:block">
+            <a class="btn btn-ghost normal-case text-xl">Home</a>
+            <a class="btn btn-ghost normal-case text-xl">About us</a>
+            <a class="btn btn-ghost normal-case text-xl">Shop</a>
+            <a class="btn btn-ghost normal-case text-xl">All Fruits</a>
+        </div>
         <div class="flex-none md:mr-3">
             <a class="btn btn-ghost normal-case text-xl"><img class="max-h-full" src="./images/logo.png" alt=""></a>
-            <h2 class="text-[#121212] font-bold text-xl">Fruit Burst</h2>
+            <h2 class="text-[#121212] font-bold text-xl lg:text-4xl lg:text-white">Fruit Burst</h2>
         </div>
-        <div class="flex-1 hidden md:flex lg:block xl:block gap-2 relative">
-            <div class="form-control flex-1">
-                <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto inline" />
+        <div class="flex-1 hidden md:flex gap-2 relative lg:justify-end">
+            <div class="form-control md:flex-1 lg:flex-none lg:w-96">
+                <input type="text" placeholder="Search"
+                    class="rounded-full input input-bordered w-24 md:w-auto md:inline" />
             </div>
             <i class="fa-solid fa-magnifying-glass absolute right-4"></i>
         </div>
@@ -43,7 +51,7 @@
                 <li><a>All Fruit</a></li>
             </ul>
         </div>
-    </div>
+    </nav>
 </body>
 
 </html>
